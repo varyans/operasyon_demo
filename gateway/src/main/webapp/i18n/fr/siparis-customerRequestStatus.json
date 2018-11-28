@@ -1,0 +1,11 @@
+{
+    "gatewayApp": {
+        "CustomerRequestStatus": {
+            "null": "",
+            "CREATED": "CREATED",
+            "ONPROGRESS": "ONPROGRESS",
+            "DONE": "DONE",
+            "CANCELLED": "CANCELLED"
+        }
+    }
+}

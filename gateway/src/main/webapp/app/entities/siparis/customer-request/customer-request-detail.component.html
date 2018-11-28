@@ -1,0 +1,47 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="customerRequest">
+            <h2><span jhiTranslate="gatewayApp.siparisCustomerRequest.detail.title">Customer Request</span> {{customerRequest.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="gatewayApp.siparisCustomerRequest.userName">User Name</span></dt>
+                <dd>
+                    <span>{{customerRequest.userName}}</span>
+                </dd>
+                <dt><span jhiTranslate="gatewayApp.siparisCustomerRequest.beginLoc">Begin Loc</span></dt>
+                <dd>
+                    <span>{{customerRequest.beginLoc}}</span>
+                </dd>
+                <dt><span jhiTranslate="gatewayApp.siparisCustomerRequest.endLoc">End Loc</span></dt>
+                <dd>
+                    <span>{{customerRequest.endLoc}}</span>
+                </dd>
+                <dt><span jhiTranslate="gatewayApp.siparisCustomerRequest.operationDate">Operation Date</span></dt>
+                <dd>
+                    <span>{{customerRequest.operationDate}}</span>
+                </dd>
+                <dt><span jhiTranslate="gatewayApp.siparisCustomerRequest.orderStatus">Order Status</span></dt>
+                <dd>
+                    <span jhiTranslate="{{'gatewayApp.CustomerRequestStatus.' + customerRequest.orderStatus}}">{{customerRequest.orderStatus}}</span>
+                </dd>
+                <dt><span jhiTranslate="gatewayApp.siparisCustomerRequest.carType">Car Type</span></dt>
+                <dd>
+                    <span jhiTranslate="{{'gatewayApp.CarType.' + customerRequest.carType}}">{{customerRequest.carType}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/customer-request', customerRequest.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

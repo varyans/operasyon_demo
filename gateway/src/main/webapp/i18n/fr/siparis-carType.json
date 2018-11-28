@@ -1,0 +1,10 @@
+{
+    "gatewayApp": {
+        "CarType": {
+            "null": "",
+            "SMALL": "SMALL",
+            "MIDDLE": "MIDDLE",
+            "BIG": "BIG"
+        }
+    }
+}

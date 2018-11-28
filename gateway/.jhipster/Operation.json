@@ -1,0 +1,32 @@
+{
+    "name": "Operation",
+    "fields": [
+        {
+            "fieldName": "order",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "driver",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "operationStatus",
+            "fieldType": "OperationStatus",
+            "fieldValues": "WAITING,ASSIGN,DONE"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20181127152429",
+    "entityTableName": "operation",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": [
+        "gateway",
+        "operasyon"
+    ],
+    "microserviceName": "operasyon"
+}

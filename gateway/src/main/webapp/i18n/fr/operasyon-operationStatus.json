@@ -1,0 +1,10 @@
+{
+    "gatewayApp": {
+        "OperationStatus": {
+            "null": "",
+            "WAITING": "WAITING",
+            "ASSIGN": "ASSIGN",
+            "DONE": "DONE"
+        }
+    }
+}

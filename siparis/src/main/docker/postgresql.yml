@@ -1,0 +1,11 @@
+version: '2'
+services:
+    siparis-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/siparis/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=siparis
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432

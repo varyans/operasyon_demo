@@ -1,0 +1,54 @@
+{
+    "name": "CustomerRequest",
+    "fields": [
+        {
+            "fieldName": "userName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "beginLoc",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "endLoc",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "operationDate",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "orderStatus",
+            "fieldType": "CustomerRequestStatus",
+            "fieldValues": "CREATED,ONPROGRESS,DONE,CANCELLED"
+        },
+        {
+            "fieldName": "carType",
+            "fieldType": "CarType",
+            "fieldValues": "SMALL,MIDDLE,BIG"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20181127152427",
+    "entityTableName": "customer_request",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": [
+        "gateway",
+        "siparis"
+    ],
+    "microserviceName": "siparis"
+}

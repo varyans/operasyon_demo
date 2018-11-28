@@ -1,0 +1,30 @@
+{
+    "gatewayApp": {
+        "siparisCustomerRequest": {
+            "home": {
+                "title": "CustomerRequests",
+                "createLabel": "Créer un nouveau Customer Request",
+                "createOrEditLabel": "Créer ou éditer un Customer Request"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Customer Request {{ id }} ?"
+            },
+            "detail": {
+                "title": "Customer Request"
+            },
+            "userName": "User Name",
+            "beginLoc": "Begin Loc",
+            "endLoc": "End Loc",
+            "operationDate": "Operation Date",
+            "orderStatus": "Order Status",
+            "carType": "Car Type"
+        }
+    },
+    "siparisApp": {
+        "siparisCustomerRequest": {
+            "created": "Un nouveau Customer Request a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Customer Request avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Customer Request avec l'identifiant {{ param }} a été supprimé"
+        }
+    }
+}

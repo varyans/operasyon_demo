@@ -1,0 +1,32 @@
+{
+    "name": "Driver",
+    "fields": [
+        {
+            "fieldName": "userName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "driverStatus",
+            "fieldType": "DriverStatus",
+            "fieldValues": "AVALIABLE,ONWORK,CLOSE"
+        },
+        {
+            "fieldName": "location",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20181127152428",
+    "entityTableName": "driver",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": [
+        "gateway",
+        "surucu"
+    ],
+    "microserviceName": "surucu"
+}

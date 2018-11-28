@@ -1,0 +1,37 @@
+{
+  "generator-jhipster": {
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "enableHibernateCache": true,
+    "enableSwaggerCodegen": false,
+    "enableTranslation": true,
+    "jhiPrefix": "jhi",
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "messageBroker": "kafka",
+    "nativeLanguage": "en",
+    "packageName": "com.xinerji.cloud.surucu",
+    "packageFolder": "com/xinerji/cloud/surucu",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "serviceDiscoveryType": "eureka",
+    "skipClient": true,
+    "testFrameworks": [],
+    "websocket": false,
+    "baseName": "surucu",
+    "applicationType": "microservice",
+    "authenticationType": "oauth2",
+    "cacheProvider": "hazelcast",
+    "buildTool": "maven",
+    "serverPort": "8082",
+    "skipUserManagement": true,
+    "jhipsterVersion": "5.7.0",
+    "clientPackageManager": "npm",
+    "otherModules": []
+  },
+  "entities": [
+    "Driver"
+  ]
+}
